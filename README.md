@@ -1,6 +1,6 @@
 # Booking Platform
 
-A multi-service online reservation platform enabling service providers to manage offerings and users to book available time slots seamlessly.
+A multi-service online reservation platform that allows service providers to manage offerings and users to book available time slots seamlessly.
 
 ## Features
 - Users can view available services and book time slots.
@@ -11,6 +11,19 @@ A multi-service online reservation platform enabling service providers to manage
 - Dockerized for easy deployment.
 
 ## Folder Structure
+backend/
+ ├─ src/
+ │   ├─ controllers/
+ │   ├─ routes/
+ │   └─ config/
+ └─ package.json
+
+frontend/
+ ├─ src/
+ │   ├─ components/
+ │   ├─ pages/
+ │   └─ styles/
+ └─ package.json
 
 ## Tech Stack
 - Frontend: React.js, TypeScript, Tailwind CSS
