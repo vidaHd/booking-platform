@@ -21,7 +21,7 @@ interface AppContextProps {
 const AppContext = createContext<AppContextProps | undefined>(undefined);
 
 export const AppProvider = ({ children }: { children: ReactNode }) => {
-  const [language, setLanguage] = useState<Language>(() => (getItem<Language>("language") as Language) || "fa");
+  const [language, setLanguage] = useState<Language>(() => (getItem<Language>("language") as Language) || "en");
   const [theme, setTheme] = useState<Theme>(() => (getItem<Theme>("theme") as Theme) || "light");
 
   const toggleTheme = () => {

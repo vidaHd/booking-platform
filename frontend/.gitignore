@@ -34,3 +34,8 @@ dist-ssr
 
 # Generated CSS maps
 *.css.map
+
+# Environment variables
+.env.local
+.env.prod
+.env
