@@ -1,0 +1,173 @@
+.addAvailablePage {
+  min-height: calc(100vh - 72px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .container {
+    width: 100%;
+    max-width: 1000px;
+    padding: 0 var(--space-6);
+  }
+
+  .availableCard {
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-2xl);
+    box-shadow: var(--shadow-lg);
+    overflow: hidden;
+  }
+
+  .availableHeader {
+    background: var(--gradient-primary);
+    color: #fff;
+    padding: var(--space-8);
+
+    .availableTitle {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      h2 {
+        margin: 0 0 var(--space-2) 0;
+        font-size: var(--text-xl);
+        font-weight: var(--font-bold);
+      }
+      p {
+        margin: 0;
+        opacity: 0.95;
+      }
+    }
+  }
+
+  .timeGrid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: var(--space-4);
+    padding: var(--space-8);
+    max-height: 420px;
+    overflow: auto;
+
+    .dayColumn {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .dayHeader {
+        font-weight: var(--font-semibold);
+        color: var(--color-text-primary);
+        margin-bottom: var(--space-3);
+      }
+
+      .timeSlot {
+        background-color: var(--color-surface-secondary);
+        color: var(--color-text-primary);
+        border: 1px solid var(--color-border);
+        border-radius: var(--radius-lg);
+        padding: 0.4rem 0.8rem;
+        margin-bottom: 0.5rem;
+        width: 72px;
+        font-size: var(--text-sm);
+        cursor: pointer;
+        transition:
+          background-color 0.2s,
+          color 0.2s,
+          border-color 0.2s;
+
+        &:hover {
+          background: var(--primary-50);
+          color: var(--primary-800);
+          border-color: var(--primary-200);
+        }
+
+        &.selected {
+          background-color: var(--primary-100);
+          color: var(--primary-900);
+          border-color: var(--primary-300);
+        }
+      }
+    }
+  }
+
+  .actions {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 var(--space-8) var(--space-8);
+
+    .saveBtn {
+      background: var(--primary-600);
+      color: white;
+      border: none;
+      border-radius: var(--radius-xl);
+      padding: 0.7rem 1.2rem;
+      font-size: var(--text-sm);
+      cursor: pointer;
+      font-weight: var(--font-semibold);
+      transition: background 0.2s;
+
+      &:hover {
+        background: var(--primary-700);
+      }
+    }
+  }
+
+  /* Responsive */
+  @media (max-width: 1024px) {
+    .container {
+      padding: 0 var(--space-4);
+    }
+    .timeGrid {
+      grid-template-columns: repeat(4, 1fr);
+      padding: var(--space-6);
+      max-height: 60vh;
+    }
+    .actions {
+      padding: 0 var(--space-6) var(--space-6);
+      justify-content: center;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .container {
+      padding: 0 var(--space-3);
+    }
+    .availableHeader {
+      padding: var(--space-6);
+    }
+    .timeGrid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: var(--space-3);
+      padding: var(--space-4);
+      max-height: 58vh;
+    }
+    .timeGrid .dayColumn .timeSlot {
+      width: 64px;
+      font-size: var(--text-xs);
+      padding: 0.35rem 0.6rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .availableCard {
+      border-radius: var(--radius-xl);
+    }
+    .timeGrid {
+      grid-template-columns: 1fr;
+      gap: var(--space-2);
+      padding: var(--space-3);
+      max-height: 56vh;
+    }
+    .timeGrid .dayColumn {
+      align-items: stretch;
+    }
+    .timeGrid .dayColumn .dayHeader {
+      text-align: center;
+    }
+    .timeGrid .dayColumn .timeSlot {
+      width: 100%;
+      max-width: 100%;
+    }
+    .actions {
+      padding: 0 var(--space-3) var(--space-4);
+    }
+  }
+}

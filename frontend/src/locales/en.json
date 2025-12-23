@@ -1,0 +1,311 @@
+{
+  "hero": {
+    "welcome": "Welcome to",
+    "book_now": "Book Appointment",
+    "add_new_company": "add new company",
+    "main_title": "Professional Online Booking System",
+    "subtitle": "Book your appointment easily and anytime",
+    "trusted_platform": "Trusted Booking Platform"
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "Stay connected through our social media and contact channels",
+    "follow_us": "Follow Us",
+    "info_title": "Contact Information",
+    "address": "Address",
+    "phone": "Phone",
+    "email": "Email"
+  },
+  "features": {
+    "title": "Why Choose Us?",
+    "subtitle": "Unique features that set us apart",
+    "online_booking": "Online Booking",
+    "online_booking_desc": "Book your appointment easily at any time",
+    "various_services": "Various Services",
+    "various_services_desc": "A wide range of high-quality services",
+    "quality_guarantee": "Quality Guarantee",
+    "quality_guarantee_desc": "Customer satisfaction is our top priority",
+    "fair_price": "Fair Pricing",
+    "fair_price_desc": "Transparent and competitive prices"
+  },
+  "stats": {
+    "happy_clients": "Happy Clients",
+    "successful_bookings": "Successful Bookings",
+    "years_experience": "Years of Experience",
+    "support": "Support"
+  },
+  "cta": {
+    "title": "Ready for a new experience?",
+    "subtitle": "Book your appointment now and start your growth journey with us",
+    "button": "Book Online"
+  },
+
+  "notification": {
+    "deleteError": "Error occurred while deleting ",
+    "deleteSuccess": "Successfully deleted ",
+    "updateSuccess": " Successfully updated "
+  },
+  "welcome": { "welcome": "Welcome to Bookit!", "view_times": "View Times" },
+  "header": {
+    "welcome": "Welcome to BookIt",
+    "login": "Login",
+    "register": "Sign Up",
+    "logout": "Log Out",
+    "company": "Start your own business",
+    "add_new_company": " Add New Company",
+    "select_company": " Select Company",
+    "profile": "profile",
+    "theme": "theme",
+    "language": "language",
+    "companies": "companies",
+    "go_to_dashboard": " dashboard "
+  },
+  "common": { "yes": "yes", "no": "no" },
+
+  "profile": {
+    "editProfile": "Edit Profile",
+    "firstName": "First Name",
+    "firstNamePlaceholder": "Enter your first name",
+    "lastName": "Last Name",
+    "lastNamePlaceholder": "Enter your last name",
+    "email": "Email",
+    "emailPlaceholder": "Enter your email",
+    "mobileNumber": "Mobile Number",
+    "mobileNumberPlaceholder": "Enter your mobile number",
+    "age": "Age",
+    "agePlaceholder": "Enter your age",
+    "gender": "Gender",
+    "selectOption": "Select an option",
+    "male": "Male",
+    "female": "Female",
+    "other": "Other",
+    "aboutMe": "About Me",
+    "aboutPlaceholder": "Write a short description about yourself",
+    "changePassword": "Change Password",
+    "add_new_company": "Add New Company",
+    "saveProfile": "Save Profile",
+    "avatarAlt": "Profile Avatar"
+  },
+  "reset_password": {
+    "change_password": "Change Password",
+    "current_password": "Current Password",
+    "new_password": "New Password",
+    "repeat_new_password": "Repeat New Password",
+    "continue": "Continue",
+    "sms_verification": "SMS Verification",
+    "sms_instruction": "Enter the code sent to you via SMS",
+    "verification_code": "Verification Code",
+    "verify": "Verify",
+    "verifying": "sending..."
+  },
+  "footer": { "all_rights_reserved": "All rights reserved." },
+  "login": {
+    "welcomeBack": "Welcome Back",
+    "subtitle": "Login to your professional account",
+    "firstName": "First Name",
+    "familyName": "Family Name",
+    "password": "Password",
+    "login": "Login",
+    "forgotPassword": "Forgot your password?",
+    "register": "Register",
+    "mobileNumber": "Mobile Number",
+    "errors": { "general": "Something went wrong!" }
+  },
+  "register": {
+    "title": "Register",
+    "name": "First Name",
+    "familyName": "Family Name",
+    "mobileNumber": "Mobile Number",
+    "password": "Password",
+    "submit": "Register",
+    "email": "Email",
+    "submitting": " Registering...",
+    "visual": {
+      "title": "Welcome to BookIt",
+      "subtitle": "Professional online booking and management system"
+    }
+  },
+  "forgetPassword": {
+    "title": "Forgot Password",
+    "enterMobileText": "Please enter your mobile number to receive a verification code.",
+    "mobilePlaceholder": "Mobile Number",
+    "sendCode": "Send Code",
+    "verifyTitle": "Verify Code",
+    "enterCodeText": "Enter the code we sent to your mobile.",
+    "codePlaceholder": "Verification Code",
+    "verifyCode": "Verify",
+    "newPasswordTitle": "Set New Password",
+    "newPasswordPlaceholder": "New Password",
+    "resetPassword": "Reset Password",
+    "successReset": "Password successfully changed!",
+    "enterMobile": "Please enter your mobile number.",
+    "enterCode": "Please enter the verification code.",
+    "enterNewPassword": "Please enter a new password.",
+    "submitting": " sending code..."
+  },
+  "add-new-company": {
+    "back": "Back",
+    "create_company_account": "Create Company Account",
+    "enter_company_info": "Enter your company and job information",
+    "company_name_placeholder": "Enter your company name",
+    "job_label": "Job Type",
+    "select_job": "Select a job",
+    "loading_jobs": "Loading jobs...",
+    "company_name_required": "Company name is required",
+    "company_name_min_length": "Company name must be at least 2 characters",
+    "job_required": "Job selection is required",
+    "cancel": "Cancel",
+    "create": "Create Company Account"
+  },
+  "added-service": {
+    "title": "Choose or Create Services",
+    "subtitle": "Select existing services or create a new one",
+    "existing_services": "Existing services",
+    "search_placeholder": "Search services...",
+    "no_services": "No services available",
+    "selected_count": "Selected: {{count}}",
+    "create_new_service": "Create new service",
+    "service_name_placeholder": "Service name",
+    "add_service": "Add service",
+    "next_step": "Go to next step",
+    "cancel_and_close": " save"
+  },
+  "add-company-service": {
+    "title": "Add Service Details",
+    "subtitle": "Enter complete information for your service",
+    "selected_service": "Selected service",
+    "service_name_placeholder": "Service name",
+    "price_label": "Service price",
+    "price_placeholder": "e.g. 150000",
+    "duration_label": "Service duration (minutes)",
+    "duration_placeholder": "e.g. 60",
+    "cancel": "Cancel",
+    "submit": "Add service details"
+  },
+  "available-time": {
+    "title": "Set Available Times",
+    "subtitle": "Choose the days and hours you can be booked",
+    "save": "Save times",
+    "weekdays": {
+      "saturday": "Saturday",
+      "sunday": "Sunday",
+      "monday": "Monday",
+      "tuesday": "Tuesday",
+      "wednesday": "Wednesday",
+      "thursday": "Thursday",
+      "friday": "Friday"
+    }
+  },
+  "dashboard": {
+    "title": "Management Dashboard",
+    "subtitle": "Manage your business here",
+    "tabs": {
+      "overview": "Overview",
+      "schedule": "Working Hours",
+      "services": "Services",
+      "delete_confirm_title": "Delete the desired service",
+      "company": "Company",
+      "bookings": "Bookings"
+    },
+    "common": { "save": "Save", "cancel": "Cancel", "edit": "Edit", "yes": "yes", "no": "no" },
+    "overview": {
+      "today_bookings": "Today's bookings",
+      "active_services": "Active services",
+      "working_hours": "Working hours",
+      "no_hours": "No working hours set",
+      "link": "Your company link"
+    },
+    "schedule": {
+      "title": "Manage Working Hours",
+      "subtitle": "Configure your working availability",
+      "save": "Save settings"
+    },
+    "services": {
+      "title": "Manage Services",
+      "subtitle": "Maintain your services",
+      "empty": "No services",
+      "price": "Price",
+      "duration": "Duration",
+      "edit_title": "Edit Service",
+      "name": "Service name",
+      "name_ph": "Enter service name",
+      "price_ph": "Enter price",
+      "duration_ph": "Enter duration",
+      "sample_a": "Haircut",
+      "sample_b": "Hair coloring",
+      "sample_c": "Beard trim",
+      "add_new": " Add new service",
+      "concurrentCapability": " Concurrent Capability"
+    },
+    "company": {
+      "title": "Company Information",
+      "subtitle": "Edit your business details",
+      "name": "Company name",
+      "name_ph": "Enter company name",
+      "phone": "Phone",
+      "phone_ph": "Phone number",
+      "address": "Address",
+      "address_ph": "Full address",
+      "email": "Email",
+      "email_ph": "Company email",
+      "description": "Description",
+      "description_ph": "Company description",
+      "url": "your company Link"
+    },
+    "bookings": {
+      "title": "View bookings",
+      "subtitle": "Manage all bookings",
+      "customer": "Customer",
+      "service": "Service",
+      "date": "Date",
+      "time": "Time",
+      "price": "Price",
+      "status": "Status",
+      "status_pending": "Pending",
+      "status_confirmed": "Confirmed",
+      "status_rejected": "Rejected",
+      "no_data": " No Data"
+    }
+  },
+  "modal": {
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "sure": "Are you sure?"
+  },
+  "reservTime": {
+    "select_date": "Select Date",
+    "select_time": "Select Time",
+    "services": "Services",
+    "date": "Date",
+    "time": "Time",
+    "save_booking": "Save Booking",
+    "no_company_found": "No Company Found",
+    "errorTitle": "خطا",
+    "successTitle": "Success",
+    "please_select_service": "Please select a service first.",
+    "time_already_booked": "This time is already booked.",
+    "no_booking_selected": "No booking selected.",
+    "booking_saved": "Your booking has been saved successfully ",
+    "booking_save_failed": "An error occurred while saving the booking ",
+    "services_for_selected_date": " Services for the selected date",
+    "all_services": "All Services",
+    "prev_week": " Previous Week",
+    "next_week": " Next Week",
+    "approx_duration": " Approximate Duration",
+    "hours": " hours",
+    "pending": "is sending...reservTime",
+    "confirm_title": "Confirm Reservation",
+    "confirm": "Confirm",
+    "cancel": "Cancel",
+    "cloese": "cloese",
+    "deleted_successfully": "deleted successfully",
+    "delete_title":"delete title",
+    "isWaiting": "Your request has been successfully submitted. Please wait for the final approval of your reservation by the admin."
+  },
+  "auth": {
+    "required": "Authentication Required",
+    "login_or_register_to_continue": "Please log in or register to continue.",
+    "login": "Login",
+    "register": "Register"
+  }
+}

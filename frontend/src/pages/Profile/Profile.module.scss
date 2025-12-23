@@ -1,0 +1,138 @@
+.profileWrapper {
+  display: flex;
+  padding: 4rem 2rem;
+  background: var(--bg-color);
+  min-height: 70vh;
+  display: flex;
+  justify-content: center;
+}
+
+.profileContainer {
+  display: flex;
+  gap: 3rem;
+  background: var(--card-bg);
+  padding: 2.5rem;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 900px;
+}
+
+.profileLeft {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+
+  .avatarUpload {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 2px dashed #bbb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+
+    .avatar-placeholder {
+      font-size: var(--font-size-h1);
+      color: #aaa;
+    }
+  }
+}
+
+.profileRight {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+
+  [dir="rtl"].formTitle {
+    font-size: var(--font-size-h2);
+    font-weight: 700;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: start;
+  }
+  [dir="ltr"].formTitle {
+    font-size: var(--font-size-h2);
+    font-weight: 700;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: end;
+  }
+  .formGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    [dir="rtl"] & label {
+      font-weight: 500;
+      font-size: var(--font-size-p);
+      display: flex;
+      justify-content: start;
+    }
+
+    [dir="ltr"] & label {
+      font-weight: 500;
+      font-size: var(--font-size-p);
+      display: flex;
+      justify-content: start;
+    }
+    [dir="ltr"] & {
+      input,
+      select,
+      textarea {
+        padding: 0.8rem;
+        border-radius: 10px;
+        border: 1px solid #ccc;
+        background: var(--bg-color);
+        transition: 0.3s;
+        direction: ltr;
+        text-align: left;
+      }
+    }
+    [dir="rtl"] & {
+      input,
+      select,
+      textarea {
+        padding: 0.8rem;
+        border-radius: 10px;
+        border: 1px solid #ccc;
+        background: var(--bg-color);
+        transition: 0.3s;
+        direction: rtl;
+        text-align: right;
+
+        &:focus {
+          border-color: var(--primary);
+          box-shadow: 0 0 6px rgba(71, 174, 177, 0.25);
+        }
+      }
+    }
+    input::placeholder,
+    textarea::placeholder,
+    select::placeholder {
+      color: var(--text-color);
+    }
+
+    textarea {
+      resize: vertical;
+      min-height: 90px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .profileContainer {
+    flex-direction: column;
+  }
+}

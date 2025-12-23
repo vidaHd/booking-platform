@@ -1,0 +1,213 @@
+.addCompanyPage {
+  min-height: calc(100vh - 72px);
+  background: var(--color-background);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: var(--text-base);
+  height: 100vh;
+  .container {
+    max-width: 600px;
+    width: 600px;
+    margin: 0 auto;
+  }
+}
+
+.companyCard {
+  background: var(--color-surface);
+  border-radius: var(--radius-2xl);
+  box-shadow: var(--shadow-lg);
+  overflow: hidden;
+  border: 1px solid var(--color-border);
+}
+
+.companyHeader {
+  background: var(--gradient-primary);
+  padding: var(--space-8);
+  color: white;
+  position: relative;
+  overflow: hidden;
+
+  .backButton {
+    position: relative;
+    z-index: 2;
+    color: white;
+
+    &:hover {
+      background: rgba(255, 255, 255, 0.2);
+    }
+
+    svg {
+      width: 16px;
+      height: 16px;
+    }
+  }
+
+  .companyTitle {
+    position: relative;
+    z-index: 2;
+    margin-top: var(--space-6);
+    font-family: Vazir;
+
+
+    h1 {
+      font-size: var(--text-xl);
+      font-weight: var(--font-bold);
+      margin-bottom: var(--space-2);
+      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+
+      @media (max-width: 640px) {
+        font-size: var(--text-2xl);
+      }
+    }
+
+    p {
+      font-size: var(--text-lg);
+      opacity: 0.9;
+      text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+
+      @media (max-width: 640px) {
+        font-size: var(--text-base);
+      }
+    }
+  }
+}
+
+.companyForm {
+  padding: var(--space-8);
+
+  .formGrid {
+    display: grid;
+    gap: var(--space-6);
+    margin-bottom: var(--space-8);
+    .inputNewCompany {
+      direction: inherit;
+      font-size: var(--text-base);
+      padding: var(--space-3);
+      border: 1px solid black;
+      border-radius: var(--radius-xl);
+      overflow: hidden;
+      border: 1px solid var(--color-border);
+      outline: none;
+      background-color: var(--primary-50);
+      color: var(--primary-600);
+      ::placeholder {
+      text-align: start;
+      }
+    }
+  }
+[dir="rtl"] .inputNewCompany::placeholder {
+  text-align: right;
+}
+[dir="ltr"] .inputNewCompany::placeholder {
+  text-align: left;
+}
+  .formGroup {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+    font-family: Vazir;
+    .selectWrapper {
+      position: relative;
+      display: flex;
+      align-items: center;
+      font-size: var(--text-2xl);
+      select {
+        border-radius: var(--radius-xl);
+        width: 100%;
+        padding: var(--space-3) var(--space-4);
+        border: 1px solid var(--color-border);
+        color: var(--color-text-primary);
+        transition: all 0.2s ease-in-out;
+        outline: none;
+        appearance: none;
+        cursor: pointer;
+        background-color: var(--primary-50);
+         color: var(--primary-600);
+padding-inline: 2rem;    
+
+}
+      .optionInput {
+        font-size: var(--text-2xl);
+      }
+
+      .selectIcon {
+        position: absolute;
+        right: var(--space-3);
+        top: 50%;
+        transform: translateY(-50%);
+        color: var(--color-text-tertiary);
+        pointer-events: none;
+        z-index: 1;
+
+        svg {
+          width: 16px;
+          height: 16px;
+        }
+      }
+    }
+  }
+
+  .formActions {
+    display: flex;
+    gap: var(--space-4);
+    justify-content: flex-end;
+
+    @media (max-width: 640px) {
+      flex-direction: column;
+      gap: var(--space-3);
+
+      .btn {
+        width: 100%;
+      }
+    }
+  }
+}
+
+// Responsive Design
+@media (max-width: 768px) {
+  .addCompanyPage {
+    padding: var(--space-4) 0;
+
+    .container {
+      padding: 0 var(--space-4);
+    }
+  } 
+
+  .companyHeader {
+    padding: var(--space-6);
+
+    .companyTitle {
+      margin-top: var(--space-4);
+    }
+  }
+
+  .companyForm {
+    padding: var(--space-6);
+  }
+}
+
+@media (max-width: 480px) {
+  .companyHeader {
+    padding: var(--space-4);
+
+    .companyTitle {
+      h1 {
+        font-size: var(--text-xl);
+      }
+
+      p {
+        font-size: var(--text-sm);
+      }
+    }
+  }
+
+  .companyForm {
+    padding: var(--space-4);
+
+    .formGrid {
+      gap: var(--space-4);
+    }
+  }
+}

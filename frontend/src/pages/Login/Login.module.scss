@@ -1,0 +1,131 @@
+.loginPage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: var(--color-background);
+  padding: var(--space-6);
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+
+  .back {
+    align-self: flex-start;
+    margin-bottom: var(--space-6);
+    color: var(--color-text-secondary);
+    font-size: var(--text-base);
+    cursor: pointer;
+    transition: color 0.2s ease;
+
+    &:hover {
+      color: var(--primary-500);
+    }
+  }
+
+  .loginCard {
+    background-color: var(--color-surface);
+    color: var(--color-text-primary);
+    border-radius: var(--radius-2xl);
+    box-shadow: var(--shadow-md);
+    padding: var(--space-10) var(--space-8);
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+    transition: all 0.3s ease;
+
+    h2 {
+      font-size: var(--text-2xl);
+      font-weight: var(--font-semibold);
+      margin-bottom: var(--space-3);
+      color: var(--color-text-primary);
+    }
+
+    .subtitle {
+      font-size: var(--text-base);
+      color: var(--color-text-secondary);
+      margin-bottom: var(--space-8);
+      line-height: 1.5;
+    }
+
+    .loginForm {
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-5);
+
+      input {
+        padding: var(--space-3) var(--space-4);
+        border-radius: var(--radius-lg);
+        border: 1px solid var(--color-border);
+        background-color: var(--color-surface-secondary);
+        font-size: var(--text-base);
+        color: var(--color-text-primary);
+        transition:
+          border-color 0.2s ease,
+          box-shadow 0.2s ease;
+
+        &:focus {
+          border-color: var(--primary-500);
+          box-shadow: 0 0 0 3px rgba(71, 141, 141, 0.2);
+          outline: none;
+        }
+
+        &::placeholder {
+          color: var(--color-text-tertiary);
+        }
+      }
+
+      .error {
+        color: var(--accent-600);
+        font-size: var(--text-sm);
+        text-align: left;
+        margin-top: -var(--space-2);
+      }
+    }
+
+    .loginButton {
+      margin-top: var(--space-6);
+      width: 100%;
+      background-color: var(--primary-500);
+      color: #fff;
+      font-size: var(--text-base);
+      font-weight: var(--font-semibold);
+      padding: var(--space-3) 0;
+      border-radius: var(--radius-lg);
+      transition:
+        background-color 0.3s ease,
+        transform 0.1s ease;
+
+      &:hover {
+        background-color: var(--primary-600);
+      }
+
+      &:active {
+        transform: scale(0.98);
+      }
+    }
+
+    .forgotPassword {
+      margin-top: var(--space-5);
+      font-size: var(--text-sm);
+      color: var(--primary-500);
+      cursor: pointer;
+      transition: color 0.2s ease;
+      margin-bottom: var(--space-4);
+      &:hover {
+        color: var(--primary-500);
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .loginPage {
+    padding: var(--space-4);
+  }
+
+  .loginCard {
+    padding: var(--space-8) var(--space-5);
+  }
+}

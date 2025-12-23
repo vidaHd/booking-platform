@@ -1,0 +1,322 @@
+.reserveTimePage {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+  background: var(--neutral-100);
+  min-height: 100vh;
+  transition: all 0.3s ease;
+  background-image: url("/images/2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.63); 
+    backdrop-filter: blur(5px);
+    z-index: 0;
+  }
+  & > * {
+    position: relative;
+    z-index: 1;
+  }
+  &.rtl {
+    direction: rtl;
+    text-align: right;
+  }
+
+  &.ltr {
+    direction: ltr;
+    text-align: left;
+  }
+}
+
+/* Layout */
+.container {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.leftPanel{
+  background-color: var(--primary-600);
+  .contentDate{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-2);
+    img {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 12px; 
+      
+    }
+  }
+   
+}
+.leftPanel,
+.rightPanel {
+  flex: 1;
+  background: var(--secondary-50);
+  border-radius: 16px;
+  padding: 1.8rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+
+  h2 {
+    text-align: center;
+  }
+
+  .serviceCardSelcted {
+    margin-top: 4px;
+    display: flex;
+    justify-content: space-between;
+    background: var(--secondary-100);
+    border: 1px solid var(--primary-500);
+    border-radius: 12px;
+    padding: 1rem;
+    margin-bottom: 0.8rem;
+    border-top: 12px solid var(--primary-500);
+    cursor: pointer;
+    transition: all 0.2s ease;
+    min-width: 200px;
+    max-width: 200px;
+  }
+}
+
+/* Service Card */
+.serviceCard {
+  background: var(--secondary-200);
+  border-radius: 12px;
+  padding: 1rem;
+  margin-bottom: 0.8rem;
+  border: 1px solid #e5e7eb;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border-top: 12px solid transparent;
+
+  &:hover {
+    background: var(--secondary-100);
+  }
+
+  &.activeService {
+    border-color: var(--primary-600);
+    background: var(--primary-50);
+    box-shadow: 0 3px 10px rgba(59, 130, 246, 0.2);
+  }
+
+  h4 {
+    margin: 0;
+    font-size: 1rem;
+  }
+
+  .selectedTime {
+    margin-top: 6px;
+    font-size: 0.9rem;
+    color: var(--neutral-500);
+  }
+
+  .booked {
+    background: #ccc !important;
+    cursor: not-allowed;
+    opacity: 0.6;
+  }
+}
+
+/* Time Slots */
+.timeGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(70px, 1fr));
+  gap: 10px;
+}
+
+.timeBox {
+  background: var(--secondary-50);
+  padding: 12px 0;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: 500;
+  border: 1px solid transparent;
+  transition: all 0.25s ease;
+  cursor: not-allowed;
+
+  &.enabled {
+    cursor: pointer;
+    background: var(--primary-50);
+    border: 1px solid var(--primary-50);
+
+    &:hover {
+      background: var(--primary-300);
+    }
+  }
+
+  &.active {
+    background: var(--primary-600);
+    color: #fff;
+    border-color: var(--primary-200);
+  }
+
+  &.booked,
+  &.disabledByUserSelf {
+    background-color: var(--primary-600);
+    color: #fff;
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+
+  &.userBooked {
+    background-color: var(--primary-600);
+    color: #fff;
+  }
+
+  &.isBookedByOthers {
+    background-color: var(--primary-50);
+    opacity: 0.4;
+    color: #999;
+    cursor: not-allowed;
+  }
+
+  &.disabled {
+    opacity: 0.4;
+    color: #999;
+  }
+}
+
+.serviceHeader {
+  span {
+    color: var(--neutral-500);
+    font-size: var(--text-sm);
+    margin-top: var(--space-1);
+  }
+}
+.statusBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem; 
+  padding: 0.2rem 0.6rem;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  background: var(--secondary-100);
+
+  .statusIcon {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+  }
+
+  .statusContent {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+  }
+}
+
+
+.dateNavBar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  padding: 0.6rem 1rem;
+  border: 1px solid var(--neutral-300);
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  width: fit-content;
+  margin: 0 auto 1rem auto;
+  transition: all 0.3s ease;
+
+  .navBtn {
+    background: none;
+    border: none;
+    color: #444;
+    cursor: pointer;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.4rem;
+    border-radius: 6px;
+    transition: all 0.2s ease;
+
+    &:hover {
+      color: var(--primary-600);
+      background: var(--primary-50);
+      transform: scale(1.15);
+    }
+  }
+
+  .currentDate {
+    font-weight: 600;
+    color: #333;
+    font-size: 0.95rem;
+    min-width: 120px;
+    text-align: center;
+  }
+}
+.servicesContainer {
+  margin-top: var(--space-4);
+}
+
+.selectServicesList {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  .servicesContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: var(--space-2);
+  }
+}
+/* Footer */
+.footer {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .container {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .leftPanel,
+  .rightPanel {
+    width: 100%;
+    padding: 1.2rem;
+  }
+
+  .timeGrid {
+    grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .reserveTimePage {
+    padding: 1rem;
+  }
+
+  .timeBox {
+    font-size: 0.85rem;
+    padding: 10px 0;
+  }
+
+  .serviceCard h4 {
+    font-size: 0.9rem;
+  }
+
+  .footer {
+    flex-direction: column;
+  }
+}

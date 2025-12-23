@@ -1,0 +1,316 @@
+{
+  "hero": {
+    "welcome": "به",
+    "book_now": "رزرو نوبت",
+    "add_new_company": " افزودن کسب و کار جدید",
+    "main_title": "سیستم رزرو آنلاین حرفه‌ای",
+    "subtitle": "به راحتی و در هر زمان نوبت خود را رزرو کنید",
+    "trusted_platform": "پلتفرم معتبر رزرو آنلاین"
+  },
+  "contact": {
+    "title": "ارتباط با ما",
+    "subtitle": "راه‌های ارتباطی و شبکه‌های اجتماعی ما را دنبال کنید",
+    "follow_us": "ما را دنبال کنید",
+    "info_title": "اطلاعات تماس",
+    "address": "آدرس",
+    "phone": "شماره تماس",
+    "email": "ایمیل"
+  },
+  "features": {
+    "title": "چرا ما را انتخاب کنید؟",
+    "subtitle": "ویژگی‌هایی که ما را از دیگران متمایز می‌کند",
+    "online_booking": "رزرو آنلاین",
+    "online_booking_desc": "در هر زمان و به‌راحتی نوبت خود را رزرو کنید",
+    "various_services": "سرویس‌های متنوع",
+    "various_services_desc": "انواع خدمات باکیفیت برای نیازهای مختلف",
+    "quality_guarantee": "تضمین کیفیت",
+    "quality_guarantee_desc": "رضایت مشتری در اولویت ماست",
+    "fair_price": "قیمت منصفانه",
+    "fair_price_desc": "هزینه‌های شفاف و رقابتی"
+  },
+  "stats": {
+    "happy_clients": "مشتری راضی",
+    "successful_bookings": "رزرو موفق",
+    "years_experience": "سال تجربه",
+    "support": "پشتیبانی"
+  },
+  "cta": {
+    "title": "آماده تجربه‌ای جدید هستید؟",
+    "subtitle": "همین حالا نوبت خود را رزرو کنید و پیشرفت خود را آغاز کنید",
+    "button": "رزرو آنلاین"
+  },
+
+  "notification": {
+    "deleteError": "حذف با خطا مواجه شد ",
+    "deleteSuccess": "با موفقیت حذف شد ",
+    "updateSuccess": " با موفقیت بروزرسانی شد "
+  },
+  "welcome": {
+    "welcome": "خوش آمدید به Bookit!",
+    "view_times": "مشاهده زمان‌ها"
+  },
+  "common": { "save": "ذخیره", "cancel": "لغو", "edit": "ویرایش", "yes": "بله", "no": "خیر" },
+  "header": {
+    "login": "ورود",
+    "register": "ثبت نام",
+    "profile": "پروفایل",
+    "theme": "تم",
+    "language": "زبان",
+    "companies": "کمپانی‌ها",
+    "add_new_company": "ایجاد کمپانی جدید",
+    "go_to_dashboard": "رفتن به داشبورد کمپانی",
+    "select_company": "کمپانی را انتخاب کنید",
+    "logout": " خروج"
+  },
+  "profile": {
+    "editProfile": "ویرایش پروفایل",
+    "firstName": "نام",
+    "firstNamePlaceholder": "نام خود را وارد کنید",
+    "lastName": "نام خانوادگی",
+    "lastNamePlaceholder": "نام خانوادگی خود را وارد کنید",
+    "email": "ایمیل",
+    "emailPlaceholder": "ایمیل خود را وارد کنید",
+    "mobileNumber": "شماره موبایل",
+    "mobileNumberPlaceholder": "شماره موبایل خود را وارد کنید",
+    "age": "سن",
+    "agePlaceholder": "سن خود را وارد کنید",
+    "gender": "جنسیت",
+    "selectOption": "انتخاب کنید",
+    "male": "مرد",
+    "female": "زن",
+    "other": "سایر",
+    "aboutMe": "درباره من",
+    "aboutPlaceholder": "توضیح کوتاه درباره خودتان وارد کنید",
+    "changePassword": "تغییر رمز عبور",
+    "add_new_company": "افزودن کمپانی",
+    "saveProfile": "ذخیره پروفایل",
+    "avatarAlt": "تصویر پروفایل"
+  },
+  "reset_password": {
+    "change_password": "تغییر رمز عبور",
+    "current_password": "رمز عبور فعلی",
+    "new_password": "رمز عبور جدید",
+    "repeat_new_password": "تکرار رمز عبور جدید",
+    "continue": "ادامه",
+    "sms_verification": "تایید پیامکی",
+    "sms_instruction": "کدی که برای شما پیامک شده را وارد کنید",
+    "verification_code": "کد تایید",
+    "verify": "تایید",
+    "verifying": "در حال ارسال..."
+  },
+  "footer": {
+    "all_rights_reserved": "تمامی حقوق محفوظ است."
+  },
+  "login": {
+    "welcomeBack": "خوش آمدید",
+    "subtitle": "وارد حساب کاربری حرفه‌ای خود شوید",
+    "firstName": "نام",
+    "familyName": "نام خانوادگی",
+    "password": "رمز عبور",
+    "login": "ورود",
+    "forgotPassword": "رمز عبور خود را فراموش کرده‌اید؟",
+    "register": "ثبت‌ نام",
+    "mobileNumber": "شماره موبایل",
+    "errors": {
+      "general": "مشکلی پیش آمد!"
+    }
+  },
+  "register": {
+    "title": "ثبت نام",
+    "name": "نام",
+    "familyName": "نام خانوادگی",
+    "mobileNumber": "شماره موبایل",
+    "password": "رمز عبور",
+    "submit": "ثبت نام",
+    "email": "ایمیل",
+    "submitting": " در حال ثبت نام...",
+    "visual": {
+      "title": "به بوکیت خوش آمدید",
+      "subtitle": "سیستم رزرو و مدیریت آنلاین حرفه‌ای"
+    }
+  },
+
+  "forgetPassword": {
+    "title": "فراموشی رمز عبور",
+    "enterMobileText": "شماره موبایل خود را وارد کنید تا کد تأیید برای شما ارسال شود.",
+    "mobilePlaceholder": "شماره موبایل",
+    "sendCode": "ارسال کد",
+    "verifyTitle": "تأیید کد",
+    "enterCodeText": "کدی که به موبایل شما ارسال شده را وارد کنید.",
+    "codePlaceholder": "کد تأیید",
+    "verifyCode": "تأیید",
+    "newPasswordTitle": "رمز عبور جدید را وارد کنید",
+    "newPasswordPlaceholder": "رمز عبور جدید",
+    "resetPassword": "تغییر رمز عبور",
+    "successReset": "رمز عبور با موفقیت تغییر کرد!",
+    "enterMobile": "لطفاً شماره موبایل را وارد کنید.",
+    "enterCode": "لطفاً کد تأیید را وارد کنید.",
+    "enterNewPassword": "لطفاً رمز جدید را وارد کنید.",
+    "submitting": " در حال ارسال کد..."
+  },
+  "add-new-company": {
+    "back": "بازگشت",
+    "create_company_account": "ایجاد حساب شرکتی",
+    "enter_company_info": "اطلاعات شرکت و شغل خود را وارد کنید",
+    "company_name_placeholder": "نام شرکت خود را وارد کنید",
+    "job_label": "نوع شغل",
+    "select_job": "یک شغل انتخاب کنید",
+    "loading_jobs": "در حال بارگذاری...",
+    "company_name_required": "نام شرکت الزامی است",
+    "company_name_min_length": "نام شرکت باید حداقل 2 کاراکتر باشد",
+    "job_required": "انتخاب شغل الزامی است",
+    "cancel": "لغو",
+    "create": "ایجاد حساب شرکتی"
+  },
+  "added-service": {
+    "title": "انتخاب یا ساخت سرویس",
+    "subtitle": "از بین سرویس‌های موجود انتخاب کنید یا سرویس جدید بسازید",
+    "existing_services": "سرویس‌های موجود",
+    "search_placeholder": "جستجوی سرویس...",
+    "no_services": "هیچ سرویسی وجود ندارد",
+    "selected_count": "تعداد انتخاب‌شده: {{count}}",
+    "create_new_service": "ساخت سرویس جدید",
+    "service_name_placeholder": "نام سرویس",
+    "add_service": "ایجاد سرویس",
+    "next_step": "برو مرحله بعد",
+    "cancel_and_close": "ذخیره"
+  },
+  "add-company-service": {
+    "title": "افزودن جزئیات سرویس",
+    "subtitle": "اطلاعات کامل سرویس خود را وارد کنید",
+    "selected_service": "سرویس انتخاب شده",
+    "service_name_placeholder": "نام سرویس",
+    "price_label": "قیمت سرویس",
+    "price_placeholder": "مثال: 150000",
+    "duration_label": "مدت زمان سرویس (دقیقه)",
+    "duration_placeholder": "مثال: 60",
+    "cancel": "لغو",
+    "submit": "افزودن جزئیات سرویس"
+  },
+  "available-time": {
+    "title": "تنظیم زمان‌های در دسترس",
+    "subtitle": "روزها و ساعت‌های قابل رزرو خود را انتخاب کنید",
+    "save": "ذخیره زمان‌ها",
+    "weekdays": {
+      "saturday": "شنبه",
+      "sunday": "یک‌شنبه",
+      "monday": "دوشنبه",
+      "tuesday": "سه‌شنبه",
+      "wednesday": "چهارشنبه",
+      "thursday": "پنج‌شنبه",
+      "friday": "جمعه"
+    }
+  },
+  "dashboard": {
+    "title": "داشبورد مدیریت",
+    "subtitle": "از اینجا می‌توانید کسب‌وکار خود را مدیریت کنید",
+    "tabs": {
+      "overview": "نمای کلی",
+      "schedule": "ساعت حضور",
+      "services": "سرویس ها",
+      "company": "اطلاعات شرکت",
+      "bookings": "رزروها",
+      "delete_confirm_title": "حذف سرویس مورد نظر"
+    },
+    "common": { "save": "ذخیره", "cancel": "لغو", "edit": "ویرایش", "yes": "بله", "no": "خیر" },
+    "overview": {
+      "today_bookings": "رزروهای امروز",
+      "active_services": "سرویس‌های فعال",
+      "working_hours": "ساعات کاری",
+      "no_hours": "ساعت کاری تنظیم نشده",
+      "link": "لینک کمپانی شما"
+    },
+    "schedule": {
+      "title": "مدیریت ساعت حضور",
+      "subtitle": "ساعات کاری و حضور خود را تنظیم کنید",
+      "save": "ذخیره تنظیمات"
+    },
+    "services": {
+      "title": "مدیریت سرویس‌ها",
+      "subtitle": "سرویس‌های خود را مدیریت کنید",
+      "empty": "سرویسی ثبت نشده",
+      "price": "قیمت",
+      "duration": "مدت زمان",
+      "edit_title": "ویرایش سرویس",
+      "name": "نام سرویس",
+      "name_ph": "نام سرویس را وارد کنید",
+      "price_ph": "قیمت را وارد کنید",
+      "duration_ph": "مدت را وارد کنید",
+      "sample_a": "کوتاهی مو",
+      "sample_b": "رنگ مو",
+      "sample_c": "اصلاح ریش",
+      "add_new": "افزودن سرویس جدید",
+      "concurrentCapability": "قابلیت همزمانی"
+    },
+    "company": {
+      "title": "اطلاعات شرکت",
+      "subtitle": "اطلاعات کسب‌وکار خود را ویرایش کنید",
+      "name": "نام شرکت",
+      "name_ph": "نام شرکت را وارد کنید",
+      "phone": "شماره تماس",
+      "phone_ph": "شماره تماس",
+      "address": "آدرس",
+      "address_ph": "آدرس کامل",
+      "email": "ایمیل",
+      "email_ph": "ایمیل شرکت",
+      "description": "توضیحات",
+      "description_ph": "توضیحات شرکت",
+      "url": "لینک شما"
+    },
+    "bookings": {
+      "title": "مشاهده رزروها",
+      "subtitle": "تمام رزروها را مدیریت کنید",
+      "customer": "مشتری",
+      "service": "سرویس",
+      "date": "تاریخ",
+      "time": "ساعت",
+      "price": "قیمت",
+      "status": "وضعیت",
+      "status_pending": "در انتظار",
+      "status_confirmed": "تأیید شده",
+      "status_rejected": "رد شده",
+      "no_data": "هیچ رزوی نداشتید"
+    }
+  },
+  "modal": {
+    "cancel": "لغو",
+    "delete": "حذف",
+    "sure": "آیا از عملیات خود مطمن هستید؟"
+  },
+  "reservTime": {
+    "select_date": "انتخاب تاریخ",
+    "select_time": "انتخاب ساعت",
+    "services": "سرویس‌ ها",
+    "date": "تاریخ",
+    "time": "ساعت",
+    "save_booking": "ذخیره رزرو",
+    "no_company_found": "شرکتی یافت نشد",
+    "errorTitle": "خطا",
+    "successTitle": "موفقیت‌آمیز",
+    "please_select_service": "لطفاً ابتدا یک سرویس انتخاب کنید.",
+    "time_already_booked": "این زمان قبلاً رزرو شده است.",
+    "no_booking_selected": "هیچ زمانی انتخاب نشده است.",
+    "booking_saved": "رزرو شما با موفقیت ثبت شد ",
+    "booking_save_failed": "در ذخیره‌سازی رزرو خطایی رخ داد ",
+    "all_services": "تمام سرویس‌ ها",
+    "services_for_selected_date": " سرویس‌ های انتخاب شده",
+    "prev_week": "هفته قبل",
+    "next_week": "هفته بعد",
+    "approx_duration": " مدت زمان تقریبی",
+    "hours": " ساعت",
+    "pending": "در حال ارسال...",
+    "confirm_title": "تأیید رزرو",
+    "confirm": "تأیید",
+    "cancel": "انصراف",
+    "isWaiting": "درخواست شما با موفقیت ثبت شد منتظر رزو تایید نهایی توسط ادمین باشین.",
+    "cloese": "بستن",
+    "deleted_successfully": "با موفقیت حذف شد",
+    "delete_title": " حذف رزو"
+  },
+  "auth": {
+    "required": "ورود الزامی است",
+    "login_or_register_to_continue": "برای ادامه، وارد شوید یا ثبت‌نام کنید",
+    "login": "ورود",
+    "register": "ثبت‌نام"
+  }
+}

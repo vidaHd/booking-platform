@@ -1,0 +1,389 @@
+.home-page {
+  min-height: 100vh;
+  background: var(--color-background);
+  overflow-x: hidden;
+}
+
+.heroSection {
+  position: relative;
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+
+ .heroBackground {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  background-image: url('/images/2.jpg');
+  object-fit: cover;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+
+  z-index: 1;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(
+      circle at 20% 50%,
+      rgba(255, 255, 255, 0.1) 0%,
+      transparent 50%
+    );
+  }
+}
+
+}
+
+// Stats Section
+.statsSection {
+  padding: var(--space-24) var(--space-4);
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+   
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    height: 600px;
+    opacity: 0.3;
+    z-index: 0;
+  }
+
+  .statsContainer {
+    position: relative;
+    z-index: 1;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .statsGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--space-6);
+    max-width: 1200px;
+    margin: 0 auto;
+
+    @media (max-width: 1024px) {
+      grid-template-columns: repeat(2, 1fr);
+      gap: var(--space-6);
+    }
+
+    @media (max-width: 640px) {
+      grid-template-columns: repeat(2, 1fr);
+      gap: var(--space-4);
+    }
+
+    @media (max-width: 480px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .statItem {
+    padding: var(--space-8) var(--space-6);
+    border-radius: var(--radius-2xl);
+    background: var(--color-surface);
+    box-shadow: var(--shadow-md);
+    border: 1px solid var(--color-border);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: var(--gradient-primary);
+      transform: scaleX(0);
+      transition: transform 0.4s ease;
+    }
+
+    &:hover {
+      transform: translateY(-8px);
+      box-shadow: var(--shadow-xl);
+      border-color: var(--primary-300);
+
+      &::before {
+        transform: scaleX(1);
+      }
+    }
+
+    .statNumber {
+      font-size: var(--text-5xl);
+      font-weight: var(--font-extrabold);
+      background: var(--gradient-primary);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: var(--space-3);
+      line-height: var(--leading-none);
+      font-variant-numeric: tabular-nums;
+      position: relative;
+
+      @media (max-width: 768px) {
+        font-size: var(--text-4xl);
+      }
+
+      @media (max-width: 480px) {
+        font-size: var(--text-3xl);
+      }
+    }
+
+    .statLabel {
+      font-size: var(--text-base);
+      font-weight: var(--font-medium);
+      color: var(--color-text-secondary);
+      text-transform: none;
+      letter-spacing: 0;
+    }
+  }
+}
+
+// Features Section
+.featuresSection {
+  padding: var(--space-20) var(--space-4);
+  background: var(--color-background);
+  position: relative;
+
+  .sectionHeader {
+    text-align: center;
+    margin-bottom: var(--space-16);
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+
+    h2 {
+      font-size: var(--text-4xl);
+      font-weight: var(--font-bold);
+      color: var(--color-text-primary);
+      margin-bottom: var(--space-4);
+
+      @media (max-width: 768px) {
+        font-size: var(--text-3xl);
+      }
+    }
+
+    p {
+      font-size: var(--text-lg);
+      color: var(--color-text-secondary);
+      line-height: var(--leading-relaxed);
+
+      @media (max-width: 768px) {
+        font-size: var(--text-base);
+      }
+    }
+  }
+
+  .featuresGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--space-8);
+    max-width: 1200px;
+    margin: 0 auto;
+
+    @media (max-width: 640px) {
+      grid-template-columns: 1fr;
+      gap: var(--space-6);
+    }
+  }
+
+  .featureCard {
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-2xl);
+    padding: var(--space-8);
+    text-align: center;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: var(--gradient-primary);
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.4s ease;
+    }
+
+    &:hover {
+      box-shadow: var(--shadow-xl);
+      border-color: var(--primary-300);
+
+      &::before {
+        transform: scaleX(1);
+      }
+    }
+
+    .featureIcon {
+      width: 80px;
+      height: 80px;
+      background: linear-gradient(135deg, var(--primary-100), var(--primary-200));
+      border-radius: var(--radius-2xl);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto var(--space-6);
+      transition: all 0.3s ease;
+
+      @media (max-width: 480px) {
+        width: 70px;
+        height: 70px;
+      }
+
+      svg {
+        width: 32px;
+        height: 32px;
+      }
+    }
+
+    .featureTitle {
+      font-size: var(--text-xl);
+      font-weight: var(--font-semibold);
+      color: var(--color-text-primary);
+      margin-bottom: var(--space-4);
+    }
+
+    .featureDescription {
+      font-size: var(--text-base);
+      color: var(--color-text-secondary);
+      line-height: var(--leading-relaxed);
+    }
+  }
+}
+
+// CTA Section
+.ctaSection {
+  padding: var(--space-20) var(--space-4);
+  background: var(--gradient-primary);
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.1'%3E%3Ccircle cx='30' cy='30' r='4'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")
+      repeat;
+    opacity: 0.5;
+  }
+
+  .ctaContent {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: white;
+    max-width: 700px;
+    margin: 0 auto;
+
+    h2 {
+      font-size: var(--text-4xl);
+      font-weight: var(--font-bold);
+      margin-bottom: var(--space-4);
+      text-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+
+      @media (max-width: 768px) {
+        font-size: var(--text-3xl);
+      }
+    }
+
+    p {
+      font-size: var(--text-lg);
+      margin-bottom: var(--space-8);
+      opacity: 0.95;
+      line-height: var(--leading-relaxed);
+
+      @media (max-width: 768px) {
+        font-size: var(--text-base);
+      }
+    }
+
+    button {
+      background: white;
+      color: var(--primary-600);
+      box-shadow: var(--shadow-xl);
+      font-size: var(--text-lg);
+      padding: var(--space-5) var(--space-10);
+      font-weight: var(--font-semibold);
+
+      &:hover {
+        transform: translateY(-2px);
+        box-shadow: var(--shadow-2xl);
+      }
+
+      @media (max-width: 640px) {
+        width: 100%;
+        max-width: 300px;
+      }
+    }
+  }
+}
+
+// Responsive Design
+@media (max-width: 1024px) {
+  .heroSection {
+    min-height: 90vh;
+  }
+
+  .statsSection,
+  .featuresSection,
+  .ctaSection {
+    padding: var(--space-16) var(--space-4);
+  }
+}
+
+@media (max-width: 768px) {
+  .heroSection {
+    min-height: 80vh;
+    padding: var(--space-8) 0;
+  }
+
+  .statsSection,
+  .featuresSection,
+  .ctaSection {
+    padding: var(--space-12) var(--space-4);
+  }
+}
+
+@media (max-width: 480px) {
+  .heroSection {
+    min-height: 70vh;
+  }
+
+  .featureCard {
+    padding: var(--space-6);
+  }
+}

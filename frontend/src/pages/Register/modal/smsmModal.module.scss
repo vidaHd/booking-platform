@@ -1,0 +1,93 @@
+.modalOverlay {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 50;
+  background-color: rgba(0, 0, 0, 0.876);
+}
+
+.modal {
+  background: var(--primary-50);
+  color: var(--text-color);
+  padding: 2rem;
+  border-radius: 12px;
+  width: 400px;
+  max-width: 90%;
+  position: relative;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+
+  h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: var(--font-size-h2);
+  }
+}
+
+.modalContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  button{
+    width: 100px;
+  }
+}
+
+.codeInputsContainer {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin: 16px 0;
+  direction: ltr !important;
+}
+
+.codeInput {
+  width: 60px;
+  height: 56px;
+  text-align: center;
+  font-size: 1.5rem;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  transition: all 0.2s ease;
+
+  &:focus {
+    border-color: var(--text-color);
+    transform: scale(1.05);
+  }
+}
+
+.timerContainer {
+  margin: 10px 0 20px;
+  text-align: center;
+}
+
+.timerText {
+  font-size: 0.95rem;
+  color: var(--neutral-600);
+}
+
+.resendBtn {
+  background: none;
+  border: none;
+  color: var(--accent-color);
+  cursor: pointer;
+  font-weight: 600;
+  transition: color 0.2s;
+
+  &:hover {
+    color: var(--accent-hover);
+  }
+}
+
+.closeBtn {
+  position: absolute;
+  right: 12px;
+  top: 12px;
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: var(--text-color);
+}
