@@ -1,0 +1,70 @@
+{
+  "service_not_found": "service not found",
+  "auth": {
+    "wrong_user": "Wrong username",
+    "wrong_mobile": "Wrong mobile number",
+    "wrong_password": "Incorrect password",
+    "login_success": "Login successful",
+    "signup_success": "User created successfully",
+    "verification_code_subject": "Your verification code ",
+    "verification_code_email": "Hello dear {{name}}, your verification code is: {{code}}",
+    "user_not_found": "User not found.",
+    "verification_code_sent": "Verification code sent successfully.",
+    "code_verified": "Code verified successfully.",
+    "invalid_code": "Invalid verification code.",
+    "password_reset_success": "Password reset successfully.",
+    "sms_code_message": "Your verification code is {{code}}."
+  },
+  "time": {
+    "missing_fields": "companyId and timesByDay are required",
+    "update_success": "Available times updated successfully",
+    "not_found": "No time found for this day",
+    "companyId_required": "companyId is required",
+    "internal_error": "Internal server error"
+  },
+  "job": {
+    "internal_error": "Internal server error"
+  },
+  "profile": {
+    "not_found": "User not found",
+    "update_success": "Profile updated successfully",
+    "invalid_avatar": "Invalid avatar file",
+    "internal_error": "Internal server error"
+  },
+  "reset": {
+    "user_not_found": "User not found",
+    "wrong_old_password": "Old password is incorrect",
+    "sms_failed": "Failed to send SMS",
+    "sms_sent": "Reset code sent",
+    "wrong_code": "Invalid code",
+    "reset_success": "Password successfully reset",
+    "internal_error": "Internal server error"
+  },
+  "service": {
+    "internal_error": "Internal server error",
+    "not_found": "Service not found",
+    "create_success": "Service created successfully"
+  },
+  "userService": {
+    "internal_error": "Internal server error",
+    "required_fields": "All required fields must be provided.",
+    "update_success": "Services updated successfully.",
+    "update_one_success": "Service updated successfully.",
+    "delete_success": "Service deleted successfully.",
+    "not_found": "Service not found or already deleted."
+  },
+  "errors": {
+    "internal": "Internal server error"
+  },
+  "email": {
+    "new_booking_subject": "New Booking Received ✅",
+    "new_booking_body": "Hello {{companyName}},\nYou have received a new booking for {{selectedDate}} at {{selectedTimes}}.\n\nBest regards,\nBookit Team"
+  },
+  "booking": {
+    "created_success": "Booking created successfully ✅",
+    "fetched_success": "Bookings fetched successfully ✅",
+    "deleted_success": "Booking deleted successfully ✅",
+    "reserved_times_fetched": "Reserved times fetched successfully ✅",
+    "user_bookings_fetched": "User bookings fetched successfully ✅"
+  }
+}

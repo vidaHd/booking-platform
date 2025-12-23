@@ -1,0 +1,45 @@
+{
+  "name": "express-bookit",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "ts-node-dev --respawn --transpile-only src/server.ts",
+    "build": "tsc"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/bcrypt": "^6.0.0",
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.3",
+    "@types/jsonwebtoken": "^9.0.10",
+    "@types/kavenegar": "^1.1.3",
+    "@types/multer": "^2.0.0",
+    "@types/node": "^24.3.3",
+    "@types/nodemailer": "^7.0.3",
+    "migrate-mongo": "14.0.0",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.9.2"
+  },
+  "dependencies": {
+    "@tanstack/react-query": "^5.87.4",
+    "bcrypt": "^6.0.0",
+    "class-transformer": "^0.5.1",
+    "class-validator": "^0.14.2",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "i18next": "^25.6.0",
+    "i18next-fs-backend": "^2.6.0",
+    "i18next-http-middleware": "^3.8.1",
+    "jsonwebtoken": "^9.0.2",
+    "kavenegar": "^1.1.4",
+    "mongodb": "^7.0.0",
+    "mongoose": "^8.18.1",
+    "multer": "^2.0.2",
+    "nodemailer": "^7.0.10"
+  },
+  "packageManager": "pnpm@10.25.0+sha512.5e82639027af37cf832061bcc6d639c219634488e0f2baebe785028a793de7b525ffcd3f7ff574f5e9860654e098fe852ba8ac5dd5cefe1767d23a020a92f501"
+}

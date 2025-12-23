@@ -1,0 +1,70 @@
+{
+  "service_not_found": "پیدا نشد",
+  "auth": {
+    "wrong_user": "نام کاربری اشتباه است",
+    "wrong_mobile": "شماره موبایل اشتباه است",
+    "wrong_password": "رمز عبور اشتباه است",
+    "login_success": "ورود موفقیت‌آمیز بود",
+    "signup_success": "کاربر با موفقیت ساخته شد",
+    "verification_code_subject": "کد تأیید شما ",
+    "verification_code_email": "سلام {{name}} عزیز، کد تأیید شما: {{code}}",
+    "user_not_found": "کاربر یافت نشد.",
+    "verification_code_sent": "کد تأیید با موفقیت ارسال شد.",
+    "code_verified": "کد با موفقیت تأیید شد.",
+    "invalid_code": "کد تأیید نادرست است.",
+    "password_reset_success": "رمز عبور با موفقیت بازنشانی شد.",
+    "sms_code_message": "کد تأیید شما {{code}} است."
+  },
+  "time": {
+    "missing_fields": "companyId و timesByDay الزامی هستند",
+    "update_success": "ساعت‌های در دسترس با موفقیت به‌روزرسانی شدند",
+    "not_found": "زمانی برای این روز پیدا نشد",
+    "companyId_required": "companyId الزامی است",
+    "internal_error": "خطای داخلی سرور"
+  },
+  "job": {
+    "internal_error": "خطای داخلی سرور"
+  },
+  "profile": {
+    "not_found": "کاربر یافت نشد",
+    "update_success": "پروفایل با موفقیت به‌روزرسانی شد",
+    "invalid_avatar": "فایل آواتار معتبر نیست",
+    "internal_error": "خطای داخلی سرور"
+  },
+  "reset": {
+    "user_not_found": "کاربر یافت نشد",
+    "wrong_old_password": "رمز قبلی اشتباه است",
+    "sms_failed": "ارسال پیامک ناموفق بود",
+    "sms_sent": "کد تغییر رمز ارسال شد",
+    "wrong_code": "کد اشتباه است",
+    "reset_success": "رمز عبور با موفقیت تغییر یافت",
+    "internal_error": "خطای داخلی سرور"
+  },
+  "service": {
+    "internal_error": "خطای داخلی سرور",
+    "not_found": "سرویس یافت نشد",
+    "create_success": "سرویس با موفقیت ایجاد شد"
+  },
+  "userService": {
+    "internal_error": "خطای داخلی سرور",
+    "required_fields": "تمام فیلدهای لازم را وارد کنید.",
+    "update_success": "سرویس‌ها با موفقیت به‌روزرسانی شدند.",
+    "update_one_success": "سرویس با موفقیت به‌روزرسانی شد.",
+    "delete_success": "سرویس با موفقیت حذف شد.",
+    "not_found": "سرویس یافت نشد یا قبلاً حذف شده است."
+  },
+  "errors": {
+    "internal": "خطای داخلی سرور"
+  },
+  "email": {
+    "new_booking_subject": "رزرو جدید دریافت شد ✅",
+    "new_booking_body": "سلام {{companyName}}،\nشما یک رزرو جدید دارید برای تاریخ {{selectedDate}} در ساعت {{selectedTimes}}.\n\nبا احترام،\nتیم Bookit"
+  },
+  "booking": {
+    "created_success": "رزرو با موفقیت ایجاد شد ✅",
+    "fetched_success": "رزروها با موفقیت دریافت شدند ✅",
+    "deleted_success": "رزرو با موفقیت حذف شد ✅",
+    "reserved_times_fetched": "ساعت‌های رزرو شده با موفقیت دریافت شد ✅",
+    "user_bookings_fetched": "رزروهای کاربر با موفقیت دریافت شدند ✅"
+  }
+}
