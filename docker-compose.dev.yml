@@ -1,0 +1,66 @@
+version: "3.9"
+
+services:
+  mongo:
+    image: mongo:7
+    container_name: bookit-mongo-dev
+    command: --bind_ip_all
+    ports:
+      - "27017:27017"
+    environment:
+      MONGO_INITDB_DATABASE: bookit
+    volumes:
+      - mongo-data:/data/db
+      - ./mongo-backup/dump:/docker-entrypoint-initdb.d:ro
+    healthcheck:
+      test: ["CMD", "mongosh", "--eval", "db.adminCommand('ping')"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+    networks:
+      - bookit-network
+
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile.dev
+    container_name: bookit-backend-dev
+    ports:
+      - "5000:5000"
+    env_file:
+      - backend/.env.local
+    volumes:
+      - ./backend:/app
+      - backend-node-modules:/app/node_modules
+    depends_on:
+      mongo:
+        condition: service_healthy
+    networks:
+      - bookit-network
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile.dev
+    container_name: bookit-frontend-dev
+    ports:
+      - "5173:5173"
+    env_file:
+      - frontend/.env.local
+    volumes:
+      - ./frontend:/app
+      - frontend-node-modules:/app/node_modules
+    depends_on:
+      backend:
+        condition: service_started
+    networks:
+      - bookit-network
+
+networks:
+  bookit-network:
+    driver: bridge
+
+volumes:
+  mongo-data:
+  backend-node-modules:
+  frontend-node-modules:
