@@ -78,4 +78,4 @@ logs/
 
 
 # Docker
-docker-data/
+docker-data/.env
